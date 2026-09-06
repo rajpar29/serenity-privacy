@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serenity Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Serenity Android app. Serenity processes on-screen text only on your device and collects no personal data.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f9;
+    --border: #e2e2ea;
+    --text: #1a1a1f;
+    --muted: #5a5a68;
+    --accent: #4b4ba3;
+    --accent-soft: #eeeef8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121216;
+      --surface: #1b1b21;
+      --border: #2c2c36;
+      --text: #ececf1;
+      --muted: #a2a2b0;
+      --accent: #a8a8f0;
+      --accent-soft: #1e1e2c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 36px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.2rem; margin: 40px 0 12px; letter-spacing: -0.01em;
+    padding-top: 8px;
+  }
+  h3 { font-size: 1rem; margin: 24px 0 8px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .lede {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 28px 0 8px;
+  }
+  .lede p { margin: 0; }
+  .lede p + p { margin-top: 10px; }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: var(--accent); }
+  code {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; padding: 1px 5px; font-size: 0.9em;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  .scroll { overflow-x: auto; }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Serenity Privacy Policy</h1>
+  <p class="meta">Applies to the Serenity Android app (<code>com.rajpar29.serenity</code>).<br>
+  Effective 6 September 2026. Last updated 6 September 2026.</p>
+</header>
+
+<div class="lede">
+  <p><strong>Serenity does not collect, store, or share any personal data.</strong></p>
+  <p>Serenity is a parental control app that blocks content and apps on a single device. It reads
+  the text shown on screen in order to match the rules a parent has set. That text is checked and
+  discarded immediately, on the device. The app has no internet permission, so it is not
+  technically capable of sending anything anywhere.</p>
+</div>
+
+<h2>Who this policy is from</h2>
+<p>This policy covers the Serenity Android app, referred to below as "Serenity", "we" or "us".
+For any question about this policy or about the app, contact
+<a href="mailto:mehulg@anoki.cc">mehulg@anoki.cc</a>.</p>
+
+<h2>What Serenity does</h2>
+<p>A parent or guardian sets up Serenity on a device and protects it with a PIN. They choose
+keywords and apps to block. When blocked content appears on screen, Serenity closes it by
+performing the system Back action and showing a short on-screen message.</p>
+
+<h2>Use of the Android AccessibilityService API</h2>
+<p>Serenity uses Android's AccessibilityService API. This is the only way an app can see what is
+displayed by other apps, which is what makes content blocking possible. Serenity is not an
+accessibility tool for people with disabilities, and it does not declare itself as one.</p>
+
+<h3>What the service accesses</h3>
+<ul>
+  <li>The text displayed on screen in other apps: titles, menu labels, messages, search terms and
+  web page text.</li>
+  <li>The package name of the app currently shown.</li>
+</ul>
+
+<h3>What Serenity does with it</h3>
+<ul>
+  <li>The text and package name are compared, in memory, with the blocking rules stored on the
+  device.</li>
+  <li>If a rule matches, Serenity performs the Back action and displays a short message.</li>
+  <li>The text is then discarded. It is not written to a file, not added to a log, not kept in a
+  database, and not shown to anyone.</li>
+</ul>
+
+<h3>What Serenity never does</h3>
+<ul>
+  <li>It does not transmit screen content, or anything else, off the device. Serenity does not
+  request the <code>INTERNET</code> permission, so it has no network access at all.</li>
+  <li>It does not record keystrokes, capture screenshots, or record audio or video.</li>
+  <li>It does not build a history or report of browsing, messages or app usage.</li>
+  <li>It does not use analytics, crash reporting, advertising or any third-party SDK.</li>
+  <li>It does not require an account, a sign-in, or any personal information.</li>
+</ul>
+
+<p>Before the accessibility service can be switched on, Serenity shows this same explanation
+inside the app and asks for explicit consent. Consent can be withdrawn at any time by turning the
+service off in Android Settings, under Accessibility.</p>
+
+<h2>Information stored on your device</h2>
+<p>Everything Serenity saves stays in the app's private storage on the device. None of it is sent
+anywhere.</p>
+
+<div class="scroll">
+<table>
+  <thead>
+    <tr><th>What</th><th>Why</th><th>How it is stored</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blocking rules (keywords, optional app package names, match settings)</td>
+      <td>To decide what to block</td>
+      <td>App-private preferences on the device</td>
+    </tr>
+    <tr>
+      <td>Blocked app list</td>
+      <td>To decide which apps to close</td>
+      <td>App-private preferences on the device</td>
+    </tr>
+    <tr>
+      <td>App settings, such as whether protection is on</td>
+      <td>To remember your choices</td>
+      <td>App-private preferences on the device</td>
+    </tr>
+    <tr>
+      <td>Your PIN</td>
+      <td>To stop anyone but the parent changing the rules</td>
+      <td>Encrypted with a key held in the device's hardware-backed Android Keystore. The key never
+      leaves the device and is excluded from backups.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Device administrator permission</h2>
+<p>Serenity can optionally be granted the Android device administrator permission. It is used for
+one purpose only: so that the permission must be switched off before the app can be uninstalled,
+which stops the app being removed in a single step. Serenity requests no other device
+administrator abilities. It cannot lock the device, erase data, change passwords or control the
+camera. The permission is optional, and it can be revoked at any time in Android Settings, which
+also allows the app to be uninstalled normally.</p>
+
+<h2>Permissions Serenity uses</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Accessibility service (BIND_ACCESSIBILITY_SERVICE)</td><td>Read on-screen text to match blocking rules and perform the Back action</td></tr>
+    <tr><td>Device administrator (BIND_DEVICE_ADMIN)</td><td>Optional. Require deactivation before uninstall</td></tr>
+    <tr><td>Query installed apps</td><td>Show a list of installed apps so a parent can pick one when creating a rule. The list is only displayed in the app and is never transmitted</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Serenity requests no internet, location, camera, microphone, contacts, storage or phone
+permissions.</p>
+
+<h2>Sharing and selling of data</h2>
+<p>Serenity collects no data, so there is no data to share or sell. We do not share information
+with third parties, advertisers or analytics providers. There are no third-party services embedded
+in the app.</p>
+
+<h2>Backups</h2>
+<p>If Android backup is enabled on the device, blocking rules and app settings may be included in
+the device backup that Android creates and stores under the device owner's own Google account,
+governed by Google's privacy policy rather than ours. The encrypted PIN file is explicitly
+excluded from both cloud backup and device-to-device transfer.</p>
+
+<h2>Children's privacy</h2>
+<p>Serenity is a tool intended to be installed and configured by a parent, guardian or the device
+owner. It is not directed at children as its audience, and it collects no personal information
+from anyone, including children. Because no data is collected or transmitted, no personal
+information about a child is ever gathered, stored remotely or disclosed.</p>
+
+<h2>Data retention and deletion</h2>
+<p>All of Serenity's data lives in the app's private storage on the device. Clearing the app's
+storage in Android Settings, or uninstalling the app, permanently deletes the rules, the settings
+and the PIN. Since nothing is transmitted, there is no server-side copy to request the deletion
+of. If device administrator is active, switch it off first so the app can be uninstalled.</p>
+
+<h2>Security</h2>
+<p>Screen text is processed in memory and discarded. The PIN is encrypted with a hardware-backed
+key from the Android Keystore. All app data is held in Android's app-private storage, which other
+apps cannot read. The app has no network capability, which removes the possibility of data being
+intercepted in transit.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at this address with a new "last
+updated" date. Material changes affecting how the app handles information will also be surfaced
+inside the app.</p>
+
+<h2>Contact</h2>
+<p>Questions, requests or concerns: <a href="mailto:mehulg@anoki.cc">mehulg@anoki.cc</a>.</p>
+
+<footer>
+  Serenity for Android &middot; Privacy policy &middot; Last updated 6 September 2026
+</footer>
+</div>
+</body>
+</html>
