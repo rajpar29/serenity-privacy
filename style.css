@@ -1,0 +1,63 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f6f6f9;
+  --border: #e2e2ea;
+  --text: #1a1a1f;
+  --muted: #5a5a68;
+  --accent: #4b4ba3;
+  --accent-soft: #eeeef8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121216;
+    --surface: #1b1b21;
+    --border: #2c2c36;
+    --text: #ececf1;
+    --muted: #a2a2b0;
+    --accent: #a8a8f0;
+    --accent-soft: #1e1e2c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 96px; }
+nav { margin-bottom: 28px; font-size: 0.9rem; }
+nav a { color: var(--muted); text-decoration: none; margin-right: 18px; }
+nav a:hover { color: var(--accent); text-decoration: underline; }
+nav a.here { color: var(--accent); font-weight: 600; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 32px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+h2 { font-size: 1.2rem; margin: 40px 0 12px; letter-spacing: -0.01em; padding-top: 8px; }
+h3 { font-size: 1rem; margin: 24px 0 8px; }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.lede {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin: 28px 0 8px;
+}
+.lede p { margin: 0; }
+.lede p + p { margin-top: 10px; }
+ul { padding-left: 22px; }
+li { margin: 7px 0; }
+a { color: var(--accent); }
+code {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1px 5px; font-size: 0.9em;
+}
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.scroll { overflow-x: auto; }
+footer {
+  margin-top: 56px; padding-top: 24px;
+  border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem;
+}
